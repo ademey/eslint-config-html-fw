@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-html-fw",
+  "version": "1.0.0",
+  "description": "HTML-FW ESLint Config",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "copy:assets": "node ../../tools/copy-package-assets.js",
+    "lint": "eslint -c index.js __tests__",
+    "lint:debug": "eslint --print-config index.js > eslint.debug.txt"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-class-property": "^1.0.6",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  },
+  "peerDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
